@@ -124,10 +124,7 @@ def parse_resolutions_file(filename):
 # TODO: write a generic function handling both cases
 def write_aspect_ratios_file(filename):
     aspect_ratios = [
-        "1:1, 1.0 # 1:1 ratio based on minimum dimension\n",
-        "3:2, 3/2 # Set width based on 3:2 ratio to height\n",
-        "4:3, 4/3 # Set width based on 4:3 ratio to height\n",
-        "16:9, 16/9 # Set width based on 16:9 ratio to height",
+
     ]
     with open(filename, "w", encoding="utf-8") as f:
         f.writelines(aspect_ratios)
